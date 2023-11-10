@@ -18,9 +18,10 @@ public class PlayerController : MonoBehaviour
             this.GetComponent<Rigidbody2D>().AddForce(Vector2.up*7.5f, ForceMode2D.Impulse);
             isJumping = true;
         }
+        this.GetComponent<Animator>().SetBool("jump", isJumping);
     }
-
-    void OnColliderExit2D(Collider2D coll){
+    void OnColliderEnter2D(Collider2D coll){
         isJumping = false;
+        this.GetComponent<Animator>().SetBool("jump", isJumping);
     }
 }
