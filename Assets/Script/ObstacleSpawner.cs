@@ -18,7 +18,7 @@ public class ObstacleSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(GameObject.Find("Player"));
+        
     }
 
     IEnumerator spawn(){
