@@ -5,7 +5,6 @@ using UnityEngine;
 public class ObstacleSpawner : MonoBehaviour
 {
     public GameObject LowObstacle;
-    public Vector2 TimerObstacles;
 
     public float speed = 5;
 
